@@ -1,0 +1,19 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function func($){
+            $("#button01").click(function(){$("<img src='" + $("#text01").val() + "' />").appendTo("#div01");});
+        }
+        jQuery(func)
+    </script>
+ <head>
+ </head>
+ <body>
+    <input type="text" id="text01">
+    <input type="button" value="Enter" id="button01">
+     <div id="div01">
+
+     </div>
+
+ </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <script>
+        function funcWrite(){
+            document.getElementById("d1").childNodes[0].nodeValue="bye";
+        }
+        function funcWrite2(){
+            document.getElementById("d1").childNodes[0].nodeValue="HELLO";
+        }
+    </script>
+ <head>
+ </head>
+ <body>
+  <div id="d1" onmouseover="funcWrite();" onmouseout="funcWrite2();">HELLO</div>
+  <div id="d2">IS12</div>
+ </body>
+</html>

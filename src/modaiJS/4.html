@@ -1,0 +1,14 @@
+<html>
+    <script>
+        function funcWrite(element){
+            element.parentNode.appendChild(element.cloneNode(true));
+        }
+    </script>
+ <head>
+ </head>
+ <body>
+  <div onclick="funcWrite(this);">HELLO</div>
+  <div onclick="funcWrite(this);">IS12</div>
+  <div onclick="funcWrite(this);">BYE</div>
+ </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var imgList = ["1.jpg", "2.jpg"]
+        var random = Math.floor( Math.random() * imgList.length );
+        var target = imgList[random]
+
+        function func($){
+            $("<img src='" + target + "' />").appendTo("#div01");
+        }
+        jQuery(func)
+        
+    </script>
+ <head>
+ </head>
+ <body>
+     <div id="div01">
+
+     </div>
+ </body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+    <script>
+        function funcWrite(element){
+            document.getElementById("d0").childNodes[0].nodeValue = element.childNodes[0].nodeValue;
+        }
+    </script>
+ <head>
+ </head>
+ <body>
+    <div onmouseover="funcWrite(this);"><h1 id="d0">-</h1></div>
+  <div id="d1" onmouseover="funcWrite(this);">HELLO</div>
+  <div id="d2" onmouseover="funcWrite(this);">IS12</div>
+  <div id="d3" onmouseover="funcWrite(this);">BYE</div>
+ </body>
+</html>
