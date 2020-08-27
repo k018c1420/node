@@ -1,0 +1,16 @@
+<!-- 血液型が検索で見つかればテーブル表示。見つからなければnot found.と表示する。 -->
+<h1><%=name %></h1>
+<% if(data != ""){ %>
+<table border="1">
+	<th>名前</th>
+	<th>年齢</th>
+	<th>血液型</th>
+<% for(var d of data){ %>
+	<tr>
+		<td><%= d.name %></td><td><%= d.age %></td><td><%= d.blood %></td>
+	</tr>
+<% } %>
+<% } else { %>
+	not found.
+<% } %> 
+</table>
